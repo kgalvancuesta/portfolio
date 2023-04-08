@@ -1,4 +1,4 @@
-# Kevin Galvan Cuesta Portfolio
+# Portfolio for Kevin Galvan Cuesta
 ## [Pose Estimation Project](https://github.com/kgalvancuesta/GitHub-Portfolio/tree/main/Pose%20Estimation)
 
 Welcome to Pose Estimation Project, a web app that allows you to analyze human poses without having to install any software tools on your device!
