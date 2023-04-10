@@ -16,6 +16,7 @@ def main(args):
     print("\nData retrieved successfully")
 
     # split into labels and features
+    # y is the column 'bp_exists' which determines whether a building permit exists
     y = data['bp_exists']
     X = data.drop('bp_exists', axis=1)
 
@@ -25,14 +26,14 @@ def main(args):
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=args.t)
     print("CV Sets created successfully")
 
-    # Preprocessing
+    # Preprocessing mainly happens in a .do file, but scaling is done here
     print("\nBeginning Preprocess")
     scaling = MinMaxScaler(feature_range=(-1, 1)).fit(X_train)
     X_train = scaling.transform(X_train)
     X_test = scaling.transform(X_test)
     print("Preprocess completed")
 
-    # Train the SVC
+    # Train the SVC using user arguments for k, c, and gamma
     svclassifier = SVC(kernel=args.k, C=args.c, gamma=args.g, cache_size=7500)
     print("\nBlank " + args.k + " SVM created, beginning train")
     svclassifier.fit(X_train, y_train)
@@ -60,7 +61,7 @@ def main(args):
     print("Metrics Calculated: beginning ROC")
     print("AUC: " + str(auc))
 
-    # Create ROC curve
+    # Create, display, and save the ROC curve
     plt.plot(fpr, tpr, label="AUC=" + str(auc))
     plt.ylabel('True Positive Rate')
     plt.xlabel('False Positive Rate')

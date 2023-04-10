@@ -40,7 +40,8 @@
             <div class="navbar-nav m-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
+                <a href="#projects" class="nav-item nav-link">Projects</a>
+                <a href="#qualification" class="nav-item nav-link">Background</a>
             </div>
         </div>
     </nav>
@@ -59,7 +60,7 @@
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Software Engineer, Data Scientist, Machine Learning, Analytics</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="" class="btn btn-outline-light mr-5">Download CV</a>
+                        <a href="img/Resume.pdf" download class="btn btn-outline-light mr-5">Resume</a>
                     </div>
                 </div>
             </div>
@@ -71,6 +72,10 @@
     <!-- About Start -->
     <div class="container-fluid py-5" id="about">
         <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <h3 class="mb-4">Data Scientist and Software Engineer</h3>
@@ -83,6 +88,7 @@
                         <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">(630) 890-9256</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">kevin.galvan.cuesta@gmail.com</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Location: <span class="text-secondary">Glen Ellyn, IL</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>LinkedIn: <span class="text-secondary"><a href="https://www.linkedin.com/in/kevingalvancuesta/">Click here</a></span></h6></div>
                     </div>
                 </div>
             </div>
@@ -90,12 +96,75 @@
     </div>
     <!-- About End -->
 
+        <!-- Projects Start -->
+    <div class="container-fluid py-5" id="projects">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Previous Work</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4"><a href="https://github.com/kgalvancuesta/Portfolio/tree/main/CA%20SVM%20Model">California Parcel SVM</a></h3>
+                    <p>This was the central project that I worked on as a consultant for the California Housing Department. 
+                    Using our predicted financial metrics for building permits of different sizes, I created a Support Vector Machine ensemble to predict the likelihood a parcel of land would be developed.
+                    A large portion of the preprocessing was completed in Stata using .do files. The regressions used as input for the SVM were also completed in Stata, but later migrated to Excel.
+                    The SVM was made using Scikit-learn's SVM function in Python. Some final preprocessing occurs here as well as calculating and display metrics such as Precision, Recall, and ROC curves.
+                    </p>
+                    <p>Due to the size of the dataset, you will also find a GPU version of the Python file as we found ways to train the SVM more quickly. There are a variety of different tuning settings and training size sets
+                    under the finalized models folder.</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4"><a href="https://github.com/kgalvancuesta/Portfolio/tree/main/Pose%20Estimation">Pose Estimation</a></h3>
+                    <p>
+                        On the left you are seeing our team's first iteration of a web app that allows you to analyze human poses without having to install any software tools on your device!
+
+                        The desktop application, which is available for download, takes in images of a person and the subject’s height and outputs coordinates in a metric space using an Artificial Neural Network (ANN) from the BlazePose library.
+
+                        Our website is based on the original app. It includes improved features and, most importantly, enhanced ability of mapping as many as 68 human body nodes and producing positional and angular data about their coordinates
+                    </p>
+                    <p>The latest version includes video and is available <a href="https://estimatepose.case.edu/">here</a> with the login below. Please note the credentials are managed by the owner and may be out of date.</p>
+                    <div class="row mb-4">
+                        <div class="col-sm-6 py-2"><h6>Username: <span class="text-secondary">stempower</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Password: <span class="text-secondary">biomechanics2022!</span></h6></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4"><a href="https://github.com/kgalvancuesta/Portfolio/tree/main/Bayes%20Problem%20Set">Naive Bayes Classifier</a></h3>
+                    <p>While working as the Advanced Econometrics teaching assistant, I wanted to bring more Machine Learning material to the lecture series. </p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Graduate Research</h3>
+                    <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum. Amet dolor stet lorem diam dolor justo et dolor dolor dolor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
 
     <!-- Qualification Start -->
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Background</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
             </div>
             <div class="row align-items-center">
@@ -106,19 +175,29 @@
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Computer Science</h5>
                             <p class="mb-2"><strong>Case School of Engineering</strong>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                            <p>
+                                I began by taking Algorithms, Data Structures, Linear Algebra, and other standard Computer Science courses. I finished my Computer Science degree specializing in Artificial Intelligence courses:
+                                Sequential Decision Making, Machine Learning, Probability, Statistics, and Database courses. Here I worked on projects using SQL, HTML, Java, Python with its major libraries, and so on.
+                                Some of these were graduate-level courses with large research components.
+                            </p>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Economics</h5>
                             <p class="mb-2"><strong>Weatherhead School of Economics</strong>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                            <p>On the technical side, I took Statistics and Advanced Econometrics courses, as well as courses such as calculus-based Game Theory, and Micro/Macroeconomic Theory.
+                               My industry-specific courses included courses on Entrepreneurial Finance, Health Care, Labor Markets, Technology, and Public Finance.
+                               I also participated as a TA in several courses in the department, but primarily for the Data Science courses Econometrics and Advanced Econometrics.
+                            </p>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Graduate Work</h5>
-                            <p class="mb-2"><strong>Case School of Engineering</strong>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                            <h5 class="font-weight-bold mb-1">Philosophy</h5>
+                            <p class="mb-2"><strong>CWRU Dept. Of Philosophy</strong>
+                            <p>
+                                During my studies on Philosophy I specialized in Ethics with courses such as Ethics and Artificial Intelligence, Political and Social Philosophy, and Global Poverty.
+                                I took a particular interest in Philosophy and the law with courses like Ethics and Public Policy, and Human Rights. This led me to take pre-law courses covering case law involving individual rights and developments of the Constitution overtime.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -129,19 +208,34 @@
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Data Science Consultant</h5>
                             <p class="mb-2"><strong>California Department of Housing</strong> | <small>June 2022 - Mar 2023</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                            <p>
+                                Calculated financial metrics using location, size, access and other parcel data
+                                Designed multiple probabilistic learning approaches and an SVM ensemble to predict the likelihood
+                                of obtaining building permits on land parcels in Python (Scikit-Learn)
+                                Created to automate parcel distribution decisions by the State using Excel VBA
+                            </p>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Research Lead</h5>
                             <p class="mb-2"><strong>Case School of Engineering</strong> | <small>Dec 2022 - June 2023</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                            <p>
+                                Built .NET image processor to find key body points using Blazepose and OpenCV in Python
+                                Led new team to remodel original work into web application using HTML, JavaScript, CSS
+                                Tested and improved robustness of algorithm by 35 % for off-center and obscure image angles
+                                Created for use by 80+ engineering schools in Africa and the U.S.
+                            </p>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Teaching Assistant</h5>
                             <p class="mb-2"><strong>Weatherhead School of Management</strong> | <small>Aug 2019 - May 2022</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                            <p>
+                                Taught Data Analysis and Visualization through laboratory sections in R, Stata, and Python
+                                Adapted my machine learning work to create a new project for Advanced Econometrics
+                                Took a supervised self-study course in Economic Philosophy. This essay work was selected as
+                                lecture material for Public Finance
+                            </p>
                         </div>
                     </div>
                 </div>
