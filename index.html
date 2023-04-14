@@ -79,11 +79,11 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <h3 class="mb-4">Data Scientist and Software Engineer</h3>
-                    <p>I am a recent graduate of Case Western Reserve University where I received my Bachelor's with majors in Computer Science, Economics, and Philosophy in addition to substantial Graduate studies.
-                       During my last year I also worked as a researcher in conjunction with STEMPower. Since graduation, I have been working with the California Department of Housing as a consultant .
+                    <p>
+                        I am a recent graduate of Case Western Reserve University with a Bachelor's degree in Computer Science, Economics, and Philosophy. Additionally, I completed substantial graduate studies during my time there. In my final year, I also worked as a researcher in conjunction with STEMPower and the Case School of Engineering.
                     </p>
                     <p>
-                        I take pride in my dedication to machine learning and mathematics and am working to continue improving as an engineer and scientist.
+                        Since graduation, I have been working as a consultant with the California Department of Housing. I take pride in my dedication to machine learning and mathematics, and I am constantly striving to improve my skills as an engineer and scientist.
                     </p>
                     <div class="row mb-3">
                         <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Kevin Galvan Cuesta</span></h6></div>
@@ -101,7 +101,7 @@
     </div>
     <!-- About End -->
 
-        <!-- Projects Start -->
+        <!-- PROJECTS Start -->
     <div class="container-fluid py-5" id="projects">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
@@ -114,33 +114,39 @@
             <p>
 
             </p>
+            <!-- Parcel SVM Start -->
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
                     <img class="img-fluid rounded w-100" src="img/svm.png" alt="">
                 </div>
                 <div class="col-lg-7">
                     <h3 class="mb-4"><a href="https://github.com/kgalvancuesta/Portfolio/tree/main/CA%20SVM%20Model">California Parcel SVM</a></h3>
-                    <p>This was the central project that I worked on as a consultant for the California Housing Department. 
-                    Using our predicted financial metrics for building permits of different sizes, I created a Support Vector Machine ensemble to predict the likelihood a parcel of land would be developed.
-                    A large portion of the preprocessing was completed in Stata using .do files. The regressions used as input for the SVM were also completed in Stata, but later migrated to Excel.
-                    The SVM was made using Scikit-learn's SVM function in Python. Some final preprocessing occurs here as well as calculating and displaying metrics such as Precision, Recall, and ROC curves.
+                    <p>
+                        This was the central project that I worked on as a consultant for the California Housing Department.
+                        Using our predicted financial metrics for building permits of different sizes, I created a Support Vector Machine ensemble to predict the likelihood a parcel of land would be developed.
+                        A large portion of the preprocessing was completed in Stata using .do files. The regressions used as input for the SVM were also completed in Stata, but later migrated to Excel.
+                        The SVM was made using Scikit-learn's SVM function in Python. Some final preprocessing occurs here as well as calculating and displaying metrics such as Precision, Recall, and ROC curves.
                     </p>
-                    <p>Due to the size of the dataset, you will also find a GPU version of the Python file as we found ways to train the SVM more quickly. There are a variety of different tuning settings and training size sets
-                    under the finalized models folder.</p>
+                    <p>
+                        Due to the size of most of the datasets, you will only be able to find the smallest datasets that were used for initial testing. There are a variety of different tuning settings and training size sets
+                        under the finalized models folder. The best performing models were then run which sometimes took days at a time. Above is the output for our best performing and final SVM.
+                    </p>
                 </div>
             </div>
+            <!-- Parcel SVM End -->
+            <!-- Pose Estimation Start -->
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                    <img class="img-fluid rounded w-100" src="img/yoga.png" alt="">
                 </div>
                 <div class="col-lg-7">
                     <h3 class="mb-4"><a href="https://github.com/kgalvancuesta/Portfolio/tree/main/Pose%20Estimation">Pose Estimation</a></h3>
                     <p>
-                        On the left you are seeing our team's first iteration of a web app that allows you to analyze human poses without having to install any software tools on your device!
+                        Above you are seeing our team's first iteration of a web app that allows you to analyze human poses without having to install any software tools on your device!
 
                         The desktop application, which is available for download, takes in images of a person and the subject’s height and outputs coordinates in a metric space using a Convolutional Neural Network (CNN) from the BlazePose library.
 
-                        Our website is based on the original app. It includes improved features and, most importantly, enhanced ability of mapping as many as 68 human body nodes and producing positional and angular data about their coordinates
+                        Our website is based on the original app. It includes improved features and, most importantly, enhanced ability of mapping as many as 68 human body nodes and producing positional and angular data about their coordinates.
                     </p>
                     <p>The latest version includes video and is available <a href="https://estimatepose.case.edu/">here</a> with the login below. Please note the credentials are managed by the owner and may be out of date.</p>
                     <div class="row mb-4">
@@ -149,40 +155,61 @@
                     </div>
                 </div>
             </div>
+            <!-- Pose Estimation End -->
+            <!-- Naive Bayes Start -->
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
                     <img class="img-fluid rounded w-100" src="img/box2.png" alt="">
                 </div>
                 <div class="col-lg-7">
                     <h3 class="mb-4"><a href="https://github.com/kgalvancuesta/Portfolio/tree/main/Bayes%20Problem%20Set">Naive Bayes Classifier</a></h3>
-                    <p>While working as the Advanced Econometrics teaching assistant, I wanted to bring more hands-on Machine Learning to the lecture series. I coded a problem set illustrating the probability mechanics
-                       behind the Naive Bayes Algorithm, then removing sections and leaving instructions for the students to figure out.
-                       Students were tasked will classifying a sample among different product types as the sample size increased.
+                    <p>
+                        During my time as an Advanced Econometrics teaching assistant, I developed a hands-on approach to teaching Machine Learning concepts to students.
+                        To achieve this, I created a problem set that demonstrated the probability mechanics behind the Naive Bayes Algorithm.
+                        I removed certain sections from the assignment version and left instructions for the students to work out on their own.
+                        The problem set involved creating synthetic samples, calculating the running sum of positive observations, and using those observations to calculate the chi-squared statistic.
+                        The students were then tasked with predicting the likelihood of the next observation being positive.
+                        Finally, I provided them with prior knowledge about the distribution of samples to train the classifier.
+                        This approach helped to enhance the students' understanding of Machine Learning concepts and techniques.
+                    </p>
+                    <p>
+                        Above is the probability estimate that Box 2 (b2) is of type X (chiX) as the number of observations increase. It is a multinomial classifier with 3 classifications.
                     </p>
                 </div>
             </div>
+            <!-- Naive Bayes End -->
+            <!-- Graduate Start-->
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                    <img class="img-fluid rounded w-100" src="img/poison.png" alt="">
                 </div>
                 <div class="col-lg-7">
                     <h3 class="mb-4"><a href="https://github.com/kgalvancuesta/Portfolio/tree/main/Graduate%20Research">Graduate Research</a></h3>
                     <p>
-                        Machine Learning Summer 2021
-                        “Poisoning Attacks against SVMs” by Biggio (2013) We studied Gradient Ascent using various batch and step sizes. Our results were mixed but generally demonstrated quadratic patterns
-                        of accuracy in different data sets.
-                        “Efficient Label Contamination Attacks against Black-Box Learning” by Zhao (2017) Our
-                        research delved into flip cost functions for potential attackers. We achieved 12 % reduction in
-                        accuracy post-poisoning.
-                        AI: Sequential Decision Making Fall 2021
-                        “Online Planning for Resource Production in RTS Games” by Ray (2007) Extended this
-                        paper by modernizing its scheduling algorithms. Using the new approaches, efficiency of planning
-                        increased by a few %.
-                        “A Cascaded Supervised Learning Approach to Inverse RL” by Klein (2013) Researched alternative regressions in the estimation step. Due to the sparsity of our sample space, we selected
-                        Gaussian Process and Ridge regressions which increased our R-Squared by 15 %.
+                        While I also researched Online Planning, Cascaded Supervised Learning, and Inverse Reinforcement Learning, a highlight for me was an analysis of Battista Biggio's paper on "Poisoning Attacks against Support Vector Machines".
+                        My focus was on Biggio's work in relation to poisoning attacks in adversarial environments, particularly his 2012 paper covering several kernel forms in Support Vector Machines.
+                        I implemented the algorithm presented in the paper using Python and numpy library.
+                        Above is a graph of the SVM's classification on a noiseless, synthetic dataset post-poisoning (the SVM classifier had 100% accuracy before the applying the algorithm).
+                        The labels x1 and x2 are arbitrary.
+                        I also proposed a research extension by reversing the algorithm to minimize hinge loss and increase the accuracy of SVM.
                     </p>
+
+                    <!--    SINGLE COLUMN
+                    <p>
+                        Skills:
+                    </p>
+                    <div class="col mb-3">
+                        <div class="col-lg-7 py-1" style="white-space: nowrap;"><h6><span class="text-secondary">Research analysis and implementation</span></h6></div>
+                        <div class="col-lg-7 py-1" style="white-space: nowrap;"><h6><span class="text-secondary">Programming skills in Python and numpy library</span></h6></div>
+                        <div class="col-lg-7 py-1" style="white-space: nowrap;"><h6><span class="text-secondary">Knowledge of Support Vector Machines and machine learning algorithms</span></h6></div>
+                        <div class="col-lg-7 py-1" style="white-space: nowrap;"><h6><span class="text-secondary">Critical thinking and problem-solving skills</span></h6></div>
+                        <div class="col-lg-7 py-1" style="white-space: nowrap;"><h6><span class="text-secondary">Ability to propose and execute research extensions</span></h6></div>
+                    </div>
+                    -->
+
                 </div>
             </div>
+            <!-- Graduate End -->
         </div>
     </div>
     <!-- Projects End -->
@@ -203,9 +230,8 @@
                             <h5 class="font-weight-bold mb-1">Computer Science</h5>
                             <p class="mb-2"><strong>Case School of Engineering</strong>
                             <p>
-                                I began by taking Algorithms, Data Structures, Linear Algebra, and other standard Computer Science courses. I finished my Computer Science degree specializing in Artificial Intelligence courses:
-                                Sequential Decision Making, Machine Learning, Probability, Statistics, and Database courses. Here I worked on projects using SQL, HTML, Java, Python with its major libraries, and so on.
-                                Some of these were graduate-level courses with substantial research components.
+                                I began my studies by taking standard Computer Science courses, including Algorithms, Data Structures, and Linear Algebra. As I progressed, I specialized in Artificial Intelligence and completed courses in Sequential Decision Making, Machine Learning, Probability, Statistics, and Databases.
+                                During my studies, I worked on several projects that involved working in SQL, HTML, Java, and Python with its major libraries. Some of these projects were part of graduate-level courses with substantial research components, allowing me to gain hands-on experience and a deeper understanding of the material.
                             </p>
                         </div>
                         <div class="position-relative mb-4">
@@ -213,10 +239,9 @@
                             <h5 class="font-weight-bold mb-1">Economics</h5>
                             <p class="mb-2"><strong>Weatherhead School of Economics</strong>
                             <p>
-                                On the technical side, I took Statistics and Advanced Econometrics courses, as well as calculus-based Game Theory, and (Micro/Macro) Economic Theory.
-                                My industry-specific courses included courses on Entrepreneurial Finance, Health Care, Labor Markets, Technology, and Public Finance.
-                                I also participated as a TA in several courses in the department, but primarily for the Data Science courses Econometrics and its graduate-level counterpart, Advanced Econometrics.
-                                My final essay in a supervised self-study Economic Philosophy course was selected as lecture material for Public Finance.
+                                My technical courses included Statistics and Advanced Econometrics courses, as well as calculus-based Game Theory, and both Micro- and Macroeconomic Theory courses. I also completed several industry-specific courses, including Entrepreneurial Finance, Health Care, Labor Markets, Fintech, and Public Finance.
+
+                                While I helped teach several courses, I primarily assisted the Data Science courses Econometrics and its graduate-level counterpart, Advanced Econometrics. As part of a supervised self-study course in Economic Philosophy, I wrote a final essay that was selected as lecture material for Public Finance.
                             </p>
                         </div>
                         <div class="position-relative mb-4">
@@ -224,8 +249,9 @@
                             <h5 class="font-weight-bold mb-1">Philosophy</h5>
                             <p class="mb-2"><strong>CWRU Dept. Of Philosophy</strong>
                             <p>
-                                During my studies in Philosophy I specialized in Ethics with courses such as Ethics and Artificial Intelligence, Political and Social Philosophy, and Global Poverty.
-                                I took a particular interest in Philosophy and the law with courses like Ethics and Public Policy, and Human Rights. This led me to take pre-law courses covering case law on individual rights and developments of the Constitution overtime.
+                                In my studies of Philosophy, I focused on Ethics and completed several relevant courses, including Ethics and Artificial Intelligence, Political and Social Philosophy, and Global Poverty. Additionally, my interest in Philosophy and the law led me to enroll in courses such as Ethics and Public Policy and Human Rights.
+
+                                I also explored pre-law courses that covered case law on individual rights and the development of the Constitution over time.
                             </p>
                         </div>
                     </div>
@@ -238,10 +264,9 @@
                             <h5 class="font-weight-bold mb-1">Data Science Consultant</h5>
                             <p class="mb-2"><strong>California Department of Housing</strong> | <small>June 2022 - Mar 2023</small></p>
                             <p>
-                                Calculated financial metrics using location, size, access and other parcel data
-                                Designed multiple probabilistic learning approaches and an SVM ensemble to predict the likelihood
-                                of obtaining building permits on land parcels in Python (Scikit-Learn)
-                                Created to automate parcel distribution decisions by the State using Excel VBA
+                                We devised a novel algorithm that leverages regression techniques to estimate the financial metrics of land parcels for development.
+                                We utilized data on parcel attributes, including zoning borders and regulations, as well as environmental, demographic, and neighborhood variables.
+                                Additionally, I developed multiple probabilistic learning approaches and an SVM ensemble using Python's Scikit-Learn library to predict the probability of obtaining building permits on land parcels. Lastly, I migrated the system to PyXLL to assist the State in making parcel distribution decisions.
                             </p>
                         </div>
                         <div class="position-relative mb-4">
@@ -249,9 +274,10 @@
                             <h5 class="font-weight-bold mb-1">Research Lead</h5>
                             <p class="mb-2"><strong>STEMPower (w/ Case School of Engineering)</strong> | <small>Dec 2022 - June 2023</small></p>
                             <p>
-                                I built a .NET image processor demo application to find key body points using Blazepose and OpenCV in Python.
+                                A PhD Candidate and I built a .NET image processor demo application to find key body points using Blazepose and OpenCV in Python.
                                 As a result, the project received additional funding and I was given the opportunity to lead a new team to remodel the original work into web application using HTML, JavaScript, and CSS.
                                 Together we worked on testing and improving the robustness of the algorithm by 35 % for off-center and obscure image angles.
+                                Lastly, we increased the number of measured points and provided time-data about their position and angular relationships.
                                 This project was commissioned for use by 80+ engineering schools in Africa and the U.S.
                             </p>
                         </div>
@@ -260,8 +286,7 @@
                             <h5 class="font-weight-bold mb-1">Teaching Assistant</h5>
                             <p class="mb-2"><strong>Weatherhead School of Management</strong> | <small>Aug 2019 - May 2022</small></p>
                             <p>
-                                My primary responsibilities were to teach Data Analysis and Visualization through laboratory sections in R, Stata, and Python in addition to grading classwork.
-                                I also hosted recitation sessions and office hours. A side role, which I thoroughly enjoyed, was creating new class material. My favorite material was adapting my machine learning work to create a new problem set for Advanced Econometrics.
+                                As a teaching assistant, I was primarily responsible for teaching Data Analysis and Visualization through laboratory sections in R, Stata, and Python. Additionally, I graded classwork and hosted recitation sessions and office hours. I thoroughly enjoyed a side role of creating new class material, and my favorite project was adapting my machine learning work to create a new problem set for Advanced Econometrics. I created other various class materials such as homework and exam questions, as well as lecture materials.
                             </p>
                         </div>
                     </div>
@@ -275,7 +300,7 @@
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center py-5">
             <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/kevingalvancuesta/"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>

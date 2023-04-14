@@ -56,7 +56,7 @@ def main(args):
     print("Precision-Recall completed")
 
     # Set up False Positive Rate, True Positive Rate and Area Under Curve
-    fpr, tpr, _ = metrics.roc_curve(y_test, y_pred)
+    fpr, tpr, _ = metrics.roc_curve(y_test, y_pred, num_points=1000)
     auc = metrics.roc_auc_score(y_test, y_pred)
     print("Metrics Calculated: beginning ROC")
     print("AUC: " + str(auc))
