@@ -1,3 +1,7 @@
+# Foreword
+There are currently three versions of this project available. You can find the original desktop demo application above which is available for download and use. You will also find an early version of the web app. The current working version is available with credentials in the original [portfolio](https://kgalvancuesta.github.io/portfolio/).  <br>
+This project was commissioned by STEMPower.
+
 # Pose Estimation Project
 
 Welcome to Pose Estimation Project, a web app that allows you to analyze human poses without having to install any software tools on your device!
