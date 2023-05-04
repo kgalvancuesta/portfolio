@@ -1,2 +1,2 @@
 # Portfolio for Kevin Galvan Cuesta
-The full portfolio can be found [here](https://kgalvancuesta.github.io/portfolio/).
+This page is only intended for browsing the different available works. The complete portfolio can be found [here](https://kgalvancuesta.github.io/portfolio/).
