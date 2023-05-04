@@ -6,7 +6,7 @@ This project was commissioned by STEMPower.
 
 Welcome to Pose Estimation Project, a web app that allows you to analyze human poses without having to install any software tools on your device!
 
-The desktop application takes in images of a person and the subject’s height and outputs coordinates in a metric space using an Artificial Neural Network (ANN) from the BlazePose library.
+The desktop application takes in images of a person and the subject’s height and outputs coordinates in a metric space using an Artificial Neural Network (ANN) from the BlazePose and Caffe libraries.
 
 Our website is developed based on the original app. It includes improved features and, most importantly, enhanced ability of mapping as many as 68 human body nodes and producing data about their coordinates.
 
