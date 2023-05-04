@@ -1,5 +1,6 @@
 # Foreword
-There are currently three versions of this project available. You can find the original desktop demo application above which is available for download and use. You will also find an early version of the web app. The current working version is available with credentials in the original [portfolio](https://kgalvancuesta.github.io/portfolio/).  <br>
+There are currently three versions of this project available. You can find the original desktop demo application above which is available for download and use. You will also find an early version of the web app. The current working version is available with in the original [portfolio](https://kgalvancuesta.github.io/portfolio/).  
+
 This project was commissioned by STEMPower.
 
 # Pose Estimation Project
