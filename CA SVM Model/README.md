@@ -7,7 +7,7 @@ Here you will find several sample files of the work I conducted while working fo
 ## CAML and XL
 Above you will see slightly edited (so that you may test the portfolio) Python files made to train or load an SVM. Additionally, sample Excel functions are under 'XLFunctions'. <br> To load an SVM, the Python paths must be edited to match the location of the .SAV file. The command can be run in Anaconda as follows:  
 
-python CAML_LOAD_SAV.py --c [value for C] --g [value for Gamma]
+> **python CAML_LOAD_SAV.py --c [value for C] --g [value for Gamma]**
  
 ## [Stata Files](https://github.com/kgalvancuesta/portfolio/tree/main/CA%20SVM%20Model/Stata%20Files)
 Under the Stata files section, there are final dataset processors to generate 'test' and 'train' sets for the SVM ensemble. You will also find some work-in-progress files, including a specific work day's file.
