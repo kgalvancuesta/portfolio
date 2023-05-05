@@ -15,7 +15,7 @@ To load an SVM, the Python paths must be edited to match the location of the .SA
 Under the Stata files section, there are final dataset processors to generate 'test' and 'train' sets for the SVM ensemble. You will also find some work-in-progress files, including a specific work day's file.
 
 ## [Model Parameters](https://github.com/kgalvancuesta/portfolio/tree/main/CA%20SVM%20Model/Model%20Parameters)
-This file contains model parameters that were saved using the joblib Python library. I was able to include one of our actual SVM test parameters. They can be tested using 'CAML_LOAD_SAV.py'.
+This file contains model parameters that were saved using the **Joblib** Python library. I was able to include one of our actual SVM test parameters. They can be tested using 'CAML_LOAD_SAV.py'.
 
 ## [Results](https://github.com/kgalvancuesta/portfolio/tree/main/CA%20SVM%20Model/Results)
 The Results file contains confusion matrices, classification reports, and ROC curves for the different tests. I was able to include the final SVM ROC curve!
