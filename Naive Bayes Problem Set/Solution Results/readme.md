@@ -1,4 +1,4 @@
-[Return to Portfolio](https://kgalvancuesta.github.io/portfolio/).
+[Return to Portfolio](https://kgalvancuesta.github.io/portfolio/)  
 [Return to Naive Bayes](https://github.com/kgalvancuesta/portfolio/tree/main/Naive%20Bayes%20Problem%20Set)
 # Solution Results
 Here are the intended results of the assignment.
@@ -8,6 +8,4 @@ Here are the intended results of the assignment.
 
 Note, since the Chi-Squared statistic was used, a perfect sample observation yields a P-value of 1. The Chi-Squared statistic for a perfect sample is 0 and its P-value is 1:
 
-$$
-\chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}
-$$
+<p style="font-size:120%">$$\large\chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}$$</p>s
