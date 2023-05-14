@@ -81,13 +81,13 @@ gen b3chi3 = 1 - chi2(1, b3test3)
 // Creating the first three graphs
 // The highest line is our best guess for a box
 
-line b1chi1 b1chi2 b1chi3 observation
+line b1chi1 b1chi2 b1chi3 observation, ytitle("Probability") xtitle("Observation") title("Rough Probability Sample is of Box Type 1") legend(label(1 "Sample Box 1") label(2 "Sample Box 2") label(3 "Sample Box 3"))
 graph export box1.png, replace
 
-line b2chi1 b2chi2 b2chi3 observation
+line b2chi1 b2chi2 b2chi3 observation, ytitle("Probability") xtitle("Observation") title("Rough Probability Sample is of Box Type 2") legend(label(1 "Sample Box 1") label(2 "Sample Box 2") label(3 "Sample Box 3"))
 graph export box2.png, replace
 
-line b3chi1 b3chi2 b3chi3 observation
+line b3chi1 b3chi2 b3chi3 observation, ytitle("Probability") xtitle("Observation") title("Rough Probability Sample is of Box Type 3") legend(label(1 "Sample Box 1") label(2 "Sample Box 2") label(3 "Sample Box 3"))
 graph export box3.png, replace
 
 
@@ -108,7 +108,7 @@ gen predbox3 = (b3chi1[_n - 1]*.2 + b3chi2[_n - 1]*.45 + b3chi3[_n - 1]*.7)/nfac
 gen obs = observation - 1 if _n > 1
 
 // Generating the next graph
-line predbox1 predbox2 predbox3 obs
+graph twoway line predbox1 predbox2 predbox3 obs, ytitle("Probability") xtitle("Observation") title("Probability Next Observation is Positive") legend(label(1 "Sample Box 1") label(2 "Sample Box 2") label(3 "Sample Box 3"))
 graph export predictions.png, replace
 
 
@@ -148,11 +148,11 @@ gen b3bayes3 = (1 - chi2(1, b3test3))
 // Generating the graphs for the Bayesian predictions
 // The highest line if our best guess
 
-line b1bayes1 b1bayes2 b1bayes3 observation
+line b1bayes1 b1bayes2 b1bayes3 observation, ytitle("Probability") xtitle("Observation") title("Naive Bayes Estimate Sample is of Box Type 1") legend(label(1 "Sample Box 1") label(2 "Sample Box 2") label(3 "Sample Box 3"))
 graph export bayes1.png, replace
 
-line b2bayes1 b2bayes2 b2bayes3 observation
+line b2bayes1 b2bayes2 b2bayes3 observation, ytitle("Probability") xtitle("Observation") title("Naive Bayes Estimate Sample is of Box Type 2") legend(label(1 "Sample Box 1") label(2 "Sample Box 2") label(3 "Sample Box 3"))
 graph export bayes2.png, replace
 
-line b3bayes1 b3bayes2 b3bayes3 observation
+line b3bayes1 b3bayes2 b3bayes3 observation, ytitle("Probability") xtitle("Observation") title("Naive Bayes Estimate Sample is of Box Type 3") legend(label(1 "Sample Box 1") label(2 "Sample Box 2") label(3 "Sample Box 3"))
 graph export bayes3.png, replace
