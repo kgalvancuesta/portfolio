@@ -1,5 +1,4 @@
 [Return to Portfolio](https://kgalvancuesta.github.io/portfolio/)  
-[Return to Naive Bayes](https://github.com/kgalvancuesta/portfolio/tree/main/Naive%20Bayes%20Problem%20Set)
 # Solution Results
 Here are the intended results of the assignment.
 * "box*X*" are the rough estimate graphs to demonstrate the the probability volatility before smoothing with Naive Bayes.

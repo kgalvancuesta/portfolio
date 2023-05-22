@@ -48,6 +48,8 @@ replace runsum3 = box3[observation] + runsum3[observation-1] if _n>1
 // Generating the chi-squared statistic
 // observered minus the expected, squared. divided by the expected
 
+// TRY THIS COMMAND: prtest `sample_positive' `sample_size' = `population_positive' , by(sample_positive)
+
 // box1, testing expected 1, 2, 3
 gen b1test1 = ((runsum1 - e1)^2)/e1
 gen b1test2 = ((runsum1 - e2)^2)/e2
