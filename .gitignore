@@ -2,6 +2,8 @@
 *.csv
 *.JSONL
 *.mbox
+.DS_Store
+
 
 # Folders to ignore
 /EmailGPT/.vs/
@@ -10,4 +12,3 @@
 
 # Files to ignore
 /education.html
-/portfolio.html.DS_Store
