@@ -6,7 +6,7 @@
     <title>Portfolio - Kevin Galvan Cuesta</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Kevin Galvan Cuesta, Data Scientist, Data Science, Portfolio" name="keywords">
-    <meta content="Data Science and Software Engineer Portfolio for Kevin Galvan Cuesta" name="description">
+    <meta content="Portfolio for Kevin Galvan Cuesta" name="description">
 
     <!-- Favicon -->
     <link href="Site/img/favicon.ico" rel="icon">
@@ -86,7 +86,7 @@
                         Professionally, I was most recently a Data Analyst and Engineer at Inspire Brands, where I tackled a range of data engineering and machine learning-assisted analytics projects. Before that, I was a Data Science consultant for the California Department of Housing, developing predictive algorithms to improve access to affordable housing. During undergrad, I was both a Computer Vision researcher and a teaching assistant across multiple departments and courses.
                     </p>
                     <p>
-                        Feel free to check out some of the projects I've worked on—I’ll be adding new ones as they get closer to completion. Right now, <strong>I’m fine-tuning an LLM, testing a reinforcement learning AI Stock Trader, and building a video note-taking app in Swift</strong>.
+                        Feel free to check out some of the projects I've worked on—I’ll be adding new ones as they get closer to completion. Right now, <strong>I’m working as a Computer Vision intern, building a custom (fine-tuned) LLM, and designing a video note-taking app in Swift</strong>.
                     </p>
                     <div class="row mb-3">
                         <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">(630) 890-9256</span></h6></div>
@@ -121,11 +121,31 @@
                 <div class="col-lg-7">
                     <h3 class="mb-4"><a href="https://arcprize.org/">ARC Artificial General Intelligence Competition</a></h3>
                     <p>
-                        I am currently working on creating an AI Agent that is able to solve visual IQ tests. The left side of the diagram demonstrates each input, while the right side demostrates the target transformation.
-                        After it is shown 2 - 4 examples of inputs and targets, the Agent must be able to generate the target image using only the input image.
+                        I developed an AI agent capable of solving visual IQ test problems, where each problem consists of a set input images (left) and target transformations (right).
+                        After it is shown 2 - 4 examples of inputs and targets, the Agent must be able to generate a target image using only an unpaired input image. This Agent was created using many mixed techniques primarily from field of Knowledge-Based AI.
                     </p>
                     <p>    
-                        My work on this is not publicly available, but I am happy to discuss the project in more detail. The current version is able to solve more than 30 problems and each iteration is improving its ability to recognize problems, generalize them, and apply new solution techniques. Problems are identified using abstract features based on Computer Vision methods (Scikit-Image and OpenCV). Basic transformations are built into the agent where it then modifies and combines these transformations to come up with the target solution.
+                        The current version is able to solve 60+ distinct visual IQ problems and each iteration is improving its ability to recognize problems, generalize them, and apply new solution techniques.
+                        It uses Generate and Test, a Domain-Specific Language, Heuristic Search, and Means-Ends Analysis, in addition to analyzing the inputs using Computer Vision methods from SciPy.
+                        Basic transformations are built into the agent where it then modifies and combines these transformations to come up with the target image. This work is not publicly available, but I am happy to discuss the project in more detail. 
+                    </p>
+                </div>
+            </div>
+            <!-- ML4T -->
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded mx-auto dblock" src="Site/img/ml4t.png" alt="" style="transform: scale(1.1); transform-origin: center; padding: 10px; margin: 10px; border: 5px solid transparent;">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4"><a href="https://arcprize.org/">Reinforcement Learning Stock Trading Bot</a></h3>
+                    <p>
+                        At Georgia Tech, I spent time applying Machine Learning techniques to the stock trading problem. This work encompassed building a market simulator that accounted for commission, slippage, and other real-world factors; implementing the Q-Learning algorithm; and formatting the market simulator to fit the Reinforcement Learning framework.
+                        I researched Q-Learning theory to effectively parameterize the algorithm for Out-of-Sample performance.
+                    </p>
+                    <p>    
+                        The Stock Trader beat benchmarks (longing the target stock) on a number of stocks over different time periods. It did so while achieving lower levels of volatility compared to the underlying stock price. It also showed
+                        adaptation to different market conditions including varying levels of slippage in the simulations. It was able to do so using only a few indicators such as Bollinger Bands, Momentum, and Percentage Price Index.
+                        This is an ongoing work as I investigate increasing the granularity of the data (minute-data/other indicators) and using more advanced techniques such as Deep Q-Learning. This work is not publicly available, but I am happy to discuss the project in more detail.
                     </p>
                 </div>
             </div>
@@ -156,9 +176,11 @@
                 <div class="col-lg-7">
                     <h3 class="mb-4"><a href="https://github.com/kgalvancuesta/Graduate_Research">Poisoning Support Vector Machines</a></h3>
                     <p>
-                        A highlight for me was an analysis of Battista Biggio's paper on "Poisoning Attacks against Support Vector Machines."
+                        A highlight for me while taking graduate courses at CWRU was an analysis of Battista Biggio's paper on "Poisoning Attacks against Support Vector Machines."
                         My focus was on Biggio's work in relation to poisoning attacks in adversarial environments, particularly his 2012 paper covering several kernel forms in Support Vector Machines.
                         I implemented the algorithm presented in the paper using Python, Scikit-Learn and NumPy.
+                    </p>
+                    <p>
                         Above is a graph of the SVM's classification on a noiseless, synthetic dataset post-poisoning (the SVM classifier had 100% accuracy before the applying the algorithm).
                         The labels x1 and x2 are arbitrary.
                         I also extended this research by changing the order of the algorithm to maximize hinge loss by taking the negative gradient directly, finding mixed results in different datasets.
