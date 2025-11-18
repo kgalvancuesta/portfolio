@@ -326,6 +326,12 @@ a:hover {
   transition: var(--transition);
 }
 
+/* Make entire card clickable when wrapped in anchor tag */
+a.info-item {
+  display: flex;
+  cursor: pointer;
+}
+
 .info-item:hover {
   background: var(--primary-light);
   transform: translateY(-2px);
@@ -677,6 +683,13 @@ a:hover {
   .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  /* Add spacing for education badges on mobile */
+  .card-badge {
+    display: inline-block;
+    margin-bottom: var(--spacing-xs);
+    margin-right: var(--spacing-xs);
   }
 }
 
