@@ -27,6 +27,11 @@
       box-shadow: 0 4px 20px var(--shadow);
       margin: var(--spacing-2xl) 0;
       font-family: 'JetBrains Mono', monospace;
+      overflow-x: auto;
+    }
+
+    .keyboard-container {
+      min-width: fit-content;
     }
 
     .key-row {
@@ -48,6 +53,7 @@
       transition: var(--transition);
       cursor: default;
       position: relative;
+      flex-shrink: 0;
     }
 
     .key:hover {
@@ -93,74 +99,32 @@
     /* Mobile Responsive Styles */
     @media (max-width: 992px) {
       .keyboard-layout {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-md);
         margin: var(--spacing-lg) 0;
       }
 
       .key-row {
-        gap: 6px;
-        margin-bottom: 6px;
+        gap: 5px;
+        margin-bottom: 5px;
       }
 
       .key {
-        min-width: 35px;
-        padding: 8px;
-        font-size: 0.875rem;
-      }
-
-      .key-wide {
-        min-width: 60px;
-      }
-
-      .key-wider {
-        min-width: 80px;
-      }
-
-      .key-widest {
-        min-width: 150px;
-      }
-
-      .key-label-top {
-        font-size: 0.625rem;
-      }
-
-      .key-label-main {
-        font-size: 0.875rem;
-      }
-
-      .key-modifier {
-        font-size: 0.75rem;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .keyboard-layout {
-        padding: var(--spacing-md);
-        margin: var(--spacing-md) 0;
-        overflow-x: auto;
-      }
-
-      .key-row {
-        gap: 4px;
-        margin-bottom: 4px;
-      }
-
-      .key {
-        min-width: 28px;
+        min-width: 32px;
         padding: 6px 4px;
         font-size: 0.75rem;
+        border-width: 1px;
       }
 
       .key-wide {
-        min-width: 45px;
+        min-width: 55px;
       }
 
       .key-wider {
-        min-width: 65px;
+        min-width: 70px;
       }
 
       .key-widest {
-        min-width: 120px;
+        min-width: 140px;
       }
 
       .key-label-top {
@@ -168,11 +132,89 @@
       }
 
       .key-label-main {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
       }
 
       .key-modifier {
+        font-size: 0.65rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .keyboard-layout {
+        padding: var(--spacing-sm);
+        margin: var(--spacing-md) 0;
+        border-radius: var(--border-radius-sm);
+      }
+
+      .key-row {
+        gap: 3px;
+        margin-bottom: 3px;
+      }
+
+      .key {
+        min-width: 24px;
+        padding: 4px 2px;
         font-size: 0.625rem;
+        border-radius: 4px;
+      }
+
+      .key-wide {
+        min-width: 40px;
+      }
+
+      .key-wider {
+        min-width: 55px;
+      }
+
+      .key-widest {
+        min-width: 100px;
+      }
+
+      .key-label-top {
+        font-size: 0.45rem;
+        line-height: 1;
+      }
+
+      .key-label-main {
+        font-size: 0.65rem;
+        line-height: 1.2;
+      }
+
+      .key-modifier {
+        font-size: 0.55rem;
+        padding: 4px 2px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .key {
+        min-width: 20px;
+        padding: 3px 1px;
+      }
+
+      .key-wide {
+        min-width: 35px;
+      }
+
+      .key-wider {
+        min-width: 48px;
+      }
+
+      .key-widest {
+        min-width: 85px;
+      }
+
+      .key-label-top {
+        font-size: 0.4rem;
+      }
+
+      .key-label-main {
+        font-size: 0.6rem;
+      }
+
+      .key-modifier {
+        font-size: 0.5rem;
       }
     }
   </style>
@@ -213,6 +255,7 @@
         <section class="keyboard-layout">
           <h3 class="text-center mb-4">Layout Preview</h3>
 
+          <div class="keyboard-container">
           <div class="key-row">
             <div class="key"><span class="key-label-top">`</span><span class="key-label-main">~</span></div>
             <div class="key"><span class="key-label-top">1</span><span class="key-label-main">!</span></div>
@@ -287,6 +330,7 @@
             <div class="key key-modifier">Cmd</div>
             <div class="key key-modifier">Alt</div>
             <div class="key key-modifier">Ctrl</div>
+          </div>
           </div>
         </section>
 
