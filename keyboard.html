@@ -89,6 +89,92 @@
       font-size: 1.125rem;
       display: block;
     }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 992px) {
+      .keyboard-layout {
+        padding: var(--spacing-lg);
+        margin: var(--spacing-lg) 0;
+      }
+
+      .key-row {
+        gap: 6px;
+        margin-bottom: 6px;
+      }
+
+      .key {
+        min-width: 35px;
+        padding: 8px;
+        font-size: 0.875rem;
+      }
+
+      .key-wide {
+        min-width: 60px;
+      }
+
+      .key-wider {
+        min-width: 80px;
+      }
+
+      .key-widest {
+        min-width: 150px;
+      }
+
+      .key-label-top {
+        font-size: 0.625rem;
+      }
+
+      .key-label-main {
+        font-size: 0.875rem;
+      }
+
+      .key-modifier {
+        font-size: 0.75rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .keyboard-layout {
+        padding: var(--spacing-md);
+        margin: var(--spacing-md) 0;
+        overflow-x: auto;
+      }
+
+      .key-row {
+        gap: 4px;
+        margin-bottom: 4px;
+      }
+
+      .key {
+        min-width: 28px;
+        padding: 6px 4px;
+        font-size: 0.75rem;
+      }
+
+      .key-wide {
+        min-width: 45px;
+      }
+
+      .key-wider {
+        min-width: 65px;
+      }
+
+      .key-widest {
+        min-width: 120px;
+      }
+
+      .key-label-top {
+        font-size: 0.5rem;
+      }
+
+      .key-label-main {
+        font-size: 0.75rem;
+      }
+
+      .key-modifier {
+        font-size: 0.625rem;
+      }
+    }
   </style>
 </head>
 <body data-page="keyboard">

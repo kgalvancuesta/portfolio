@@ -225,7 +225,7 @@ a:hover {
   display: none;
   position: fixed;
   top: var(--spacing-md);
-  left: var(--spacing-md);
+  right: var(--spacing-md);
   z-index: 1001;
   background: var(--bg-white);
   border: 1px solid var(--border-color);
@@ -233,6 +233,7 @@ a:hover {
   padding: var(--spacing-sm);
   cursor: pointer;
   box-shadow: 0 2px 8px var(--shadow);
+  transition: var(--transition);
 }
 
 .mobile-menu-toggle i {
