@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Title - Kevin Galvan Cuesta</title>
+  <meta name="description" content="Brief description of your article">
+
+  <!-- Favicon -->
+  <link href="../Site/img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+
+  <style>
+    /* Article-specific styles */
+    article img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--border-radius-sm);
+      margin: var(--spacing-lg) 0;
+    }
+
+    article pre {
+      background: var(--bg-light);
+      padding: var(--spacing-md);
+      border-radius: var(--border-radius-sm);
+      overflow-x: auto;
+      border-left: 4px solid var(--primary);
+    }
+
+    article code {
+      background: var(--bg-light);
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.875rem;
+    }
+
+    article blockquote {
+      border-left: 4px solid var(--primary);
+      padding-left: var(--spacing-lg);
+      margin: var(--spacing-lg) 0;
+      font-style: italic;
+      color: var(--text-light);
+    }
+
+    .article-header {
+      margin-bottom: var(--spacing-2xl);
+      padding-bottom: var(--spacing-lg);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .article-meta {
+      display: flex;
+      gap: var(--spacing-md);
+      flex-wrap: wrap;
+      margin-top: var(--spacing-md);
+      font-size: 0.875rem;
+      color: var(--text-light);
+    }
+
+    .article-tags {
+      display: flex;
+      gap: var(--spacing-sm);
+      flex-wrap: wrap;
+      margin-top: var(--spacing-lg);
+    }
+
+    .tag {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body data-page="writings">
+
+  <div class="layout">
+    <main class="main-content">
+      <div class="content-wrapper">
+
+        <article class="card">
+          <!-- Article Header -->
+          <header class="article-header">
+            <h1>Your Article Title Here</h1>
+
+            <div class="article-meta">
+              <span><i class="far fa-calendar"></i> January 15, 2024</span>
+              <span><i class="fas fa-tag"></i> Category Name</span>
+              <span><i class="far fa-clock"></i> 5 min read</span>
+              <span><i class="fas fa-user"></i> Kevin Galvan Cuesta</span>
+            </div>
+
+            <div class="article-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">AI</span>
+              <span class="tag">Research</span>
+            </div>
+          </header>
+
+          <!-- Article Content -->
+          <section>
+            <h2>Introduction</h2>
+            <p>
+              Your introduction paragraph here. Set the context for your article and engage the reader.
+              This is where you hook your audience and explain what they'll learn.
+            </p>
+
+            <p>
+              Additional introductory paragraphs as needed. You can discuss the motivation behind
+              the topic, its importance, and what makes it interesting or relevant.
+            </p>
+
+            <h2>Main Section Heading</h2>
+            <p>
+              Your main content goes here. Break it up into logical sections with clear headings.
+              Use paragraphs to organize your thoughts and make the content easy to read.
+            </p>
+
+            <h3>Subsection Heading</h3>
+            <p>
+              You can use subsections to dive deeper into specific topics. This helps maintain
+              a clear hierarchy and makes it easier for readers to scan and find information.
+            </p>
+
+            <h4>Code Examples</h4>
+            <p>If you're writing about technical topics, you can include code:</p>
+
+            <pre><code>def example_function(parameter):
+    """
+    This is an example function showing code formatting.
+    """
+    result = parameter * 2
+    return result
+
+# Usage
+output = example_function(5)
+print(output)  # Outputs: 10</code></pre>
+
+            <p>You can also use inline code like <code>variable_name</code> or <code>function()</code> within your text.</p>
+
+            <h3>Lists and Organization</h3>
+            <p>Use lists to organize information clearly:</p>
+
+            <h4>Unordered Lists</h4>
+            <ul>
+              <li>First key point or concept</li>
+              <li>Second important item</li>
+              <li>Third consideration</li>
+              <li>Additional points as needed</li>
+            </ul>
+
+            <h4>Ordered Lists</h4>
+            <ol>
+              <li>First step in the process</li>
+              <li>Second step to follow</li>
+              <li>Third step in sequence</li>
+              <li>Final step</li>
+            </ol>
+
+            <h3>Blockquotes</h3>
+            <p>You can highlight important quotes or key takeaways:</p>
+
+            <blockquote>
+              "This is an example blockquote. Use these for important quotes, key insights,
+              or to highlight critical information that deserves special attention."
+            </blockquote>
+
+            <h2>Adding Images</h2>
+            <p>
+              To add images to your article, place them in the <code>Site/img/writings/</code> directory
+              and reference them like this:
+            </p>
+
+            <!-- Example image (update path to your actual image) -->
+            <!-- <img src="../Site/img/writings/example-image.jpg" alt="Description of image"> -->
+
+            <h2>Conclusion</h2>
+            <p>
+              Summarize your main points and provide closing thoughts. What should readers
+              take away from this article? What are the next steps or further reading?
+            </p>
+
+            <p>
+              End with a strong conclusion that reinforces your key messages and leaves
+              readers with something to think about or act on.
+            </p>
+          </section>
+
+          <!-- Article Footer -->
+          <footer style="margin-top: var(--spacing-2xl); padding-top: var(--spacing-lg); border-top: 1px solid var(--border-color);">
+            <h3>About the Author</h3>
+            <p>
+              Kevin Galvan Cuesta is an AI/ML Researcher and Software Engineer currently pursuing
+              a Master's in Computer Science at Georgia Tech. His work focuses on machine learning,
+              computer vision, and knowledge-based AI systems.
+            </p>
+
+            <div class="btn-group mt-3">
+              <a href="../writings.html" class="btn btn-outline">
+                <i class="fas fa-arrow-left"></i>
+                Back to Writings
+              </a>
+              <a href="../index.html" class="btn btn-outline">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="../js/navigation.js"></script>
+</body>
+</html>

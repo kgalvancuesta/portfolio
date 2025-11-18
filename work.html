@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Kevin Galvan Cuesta</title>
+  <meta name="description" content="Technical projects by Kevin Galvan Cuesta">
+
+  <!-- Favicon -->
+  <link href="Site/img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="work">
+
+  <div class="layout">
+    <main class="main-content">
+      <div class="content-wrapper">
+
+        <!-- Hero Section -->
+        <section class="hero">
+          <h1>Projects</h1>
+          <p>A showcase of projects from professional experience, research projects, and academics that I can share publicly. The titles hyperlink to associated sites*</p>
+        </section>
+
+        <!-- ARC AGI -->
+        <article class="card">
+          <div class="project-card">
+            <div>
+              <img src="Site/img/arc_agi.png" alt="ARC AGI Competition" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3><a href="https://arcprize.org/" target="_blank">ARC Artificial General Intelligence Competition</a></h3>
+              <p>
+                I developed an AI agent capable of solving visual IQ test problems, where each problem consists of a set input images (left) and target transformations (right).
+                After it is shown 2 - 4 examples of inputs and targets, the Agent must be able to generate a target image using only an unpaired input image. This Agent was created using many mixed techniques primarily from field of Knowledge-Based AI.
+              </p>
+              <p>
+                The current version is able to solve 60+ distinct visual IQ problems and each iteration is improving its ability to recognize problems, generalize them, and apply new solution techniques.
+                It uses Generate and Test, a Domain-Specific Language, Heuristic Search, and Means-Ends Analysis, in addition to analyzing the inputs using Computer Vision methods from SciPy.
+                Basic transformations are built into the agent where it then modifies and combines these transformations to come up with the target image. This work is not publicly available, but I am happy to discuss the project in more detail.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ML4T -->
+        <article class="card">
+          <div class="project-card">
+            <div>
+              <img src="Site/img/ml4t.png" alt="Machine Learning for Trading" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3><a>Reinforcement Learning Stock Trading Bot</a></h3>
+              <p>
+                At Georgia Tech, I spent time applying Machine Learning techniques to the stock trading problem. This work encompassed building a market simulator that accounted for commission, slippage, and other real-world factors; implementing the Q-Learning algorithm; and formatting the market simulator to fit the Reinforcement Learning framework.
+                I researched Q-Learning theory to effectively parameterize the algorithm for Out-of-Sample performance.
+              </p>
+              <p>
+                The Stock Trader beat benchmarks (longing the target stock) on a number of stocks over different time periods. It did so while achieving lower levels of volatility compared to the underlying stock price. It also showed
+                adaptation to different market conditions including varying levels of slippage in the simulations. It was able to do so using only a few indicators such as Bollinger Bands, Momentum, and Percentage Price Index.
+                This is an ongoing work as I investigate increasing the granularity of the data (minute-data/other indicators) and using more advanced techniques such as Deep Q-Learning. This work is not publicly available, but I am happy to discuss the project in more detail.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Google Certification -->
+        <article class="card">
+          <div class="project-card">
+            <div>
+              <img src="Site/img/google.png" alt="Google Advanced Data Analytics" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3><a href="https://github.com/kgalvancuesta/Google_Advanced_Data_Analytics" target="_blank">Google Certification: ML Analytics</a></h3>
+              <p>
+                This certification covered several topics including statistics, regressions, and machine learning techniques. As part of the program, I developed a prediction regression model from NYC Taxi and Limousine data. The model used data from pick up and drop off locations, time stamps, fares, and other variables to predict trip durations. Furthermore, a decision
+                tree and XGBoost model were trained to predict whether a rider would be a generous tipper. Practical applications could increase revenue and improve ride efficiency, as well as provide drivers with ways to earn more revenue.
+              </p>
+              <p>
+                This certification delved deeply into project planning, data cleaning, Exploratory Data Analysis, model construction with parameter tuning, visualizing results, and providing reports to
+                stakeholders. The GitHub repository contains executive summaries for each course within the program, along with Jupyter coding books to follow along with the work. Pickle files
+                are provided to run the models. The dataset can be found <a href="https://www.kaggle.com/datasets/neilclack/nyc-taxi-trip-data-google-public-data" target="_blank">here</a>.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ML Research -->
+        <article class="card">
+          <div class="project-card">
+            <div>
+              <img src="Site/img/poison.png" alt="Poisoning Support Vector Machines" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3><a href="https://github.com/kgalvancuesta/Graduate_Research" target="_blank">Poisoning Support Vector Machines</a></h3>
+              <p>
+                A highlight for me while taking graduate courses at CWRU was an analysis of Battista Biggio's paper on "Poisoning Attacks against Support Vector Machines."
+                My focus was on Biggio's work in relation to poisoning attacks in adversarial environments, particularly his 2012 paper covering several kernel forms in Support Vector Machines.
+                I implemented the algorithm presented in the paper using Python, Scikit-Learn and NumPy.
+              </p>
+              <p>
+                Above is a graph of the SVM's classification on a noiseless, synthetic dataset post-poisoning (the SVM classifier had 100% accuracy before the applying the algorithm).
+                The labels x1 and x2 are arbitrary.
+                I also extended this research by changing the order of the algorithm to maximize hinge loss by taking the negative gradient directly, finding mixed results in different datasets.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Parcel SVM -->
+        <article class="card">
+          <div class="project-card">
+            <div>
+              <img src="Site/img/svm.png" alt="SVM Ensemble for Development Prediction" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3><a href="https://github.com/kgalvancuesta/CA_SVM_Model" target="_blank">SVM Ensemble: Predicting Development</a></h3>
+              <p>
+                This was the central project that I worked on as a consultant for the California Housing Department.
+                Using our predicted financial metrics for building permits of different sizes, I created a Support Vector Machine ensemble to predict the likelihood that a parcel of land would be developed.
+                A large portion of the preprocessing was completed in Stata using .do files. The regressions used as input for the SVM were also completed in Stata, but later migrated to Excel.
+                The SVM was made using Scikit-learn's SVM function in Python. Some final preprocessing occurs here as well as calculating and displaying metrics such as Precision, Recall, and ROC curves.
+              </p>
+              <p>
+                Due to the size of the original model parameters and datasets, I have only included the smallest files used for initial testing.
+                The finalized models folder contains various tuning settings and training size sets that were utilized to obtain the best-performing models.
+                Running the best models often took several days (on a CUDA-supported NVIDIA GPU), and I have included the output of our final, highest-performing Support Vector Machine model (pictured above).
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pose Estimation -->
+        <article class="card">
+          <div class="project-card">
+            <div>
+              <img src="Site/img/yoga.png" alt="Computer Vision Pose Estimation" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3><a href="https://github.com/kgalvancuesta/Pose_Estimation" target="_blank">Computer Vision: Pose Estimation</a></h3>
+              <p>
+                Above you are seeing our team's first iteration of a web app that allows you to analyze human poses without having to install any software tools on your device!
+
+                The original desktop application, which is available for download, takes in images of a person and the subject's height and outputs coordinates in a metric space using a Convolutional Neural Network (CNN) from the BlazePose and Caffe libraries.
+
+                Our website is based on the original app. It includes improved features and, most importantly, enhanced ability of accurately mapping 68 desired body nodes and producing positional and angular time data about their coordinates.
+              </p>
+              <p><strong>**The web project has unfortunately been taken private by the university and is no longer publicly accessible.</strong></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Naive Bayes -->
+        <article class="card">
+          <div class="project-card">
+            <div>
+              <img src="Site/img/box2.png" alt="Naive Bayes Classifier" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3><a href="https://github.com/kgalvancuesta/Naive_Bayes_Problem_Set" target="_blank">Naive Bayes Classifier</a></h3>
+              <p>
+                During my time as an Advanced Econometrics teaching assistant, I developed a hands-on approach to teaching Machine Learning concepts to students.
+                To achieve this, I created a problem set that demonstrated the probability mechanics behind the Naive Bayes Algorithm.
+                I removed certain sections from the assignment version and left instructions for the students to work out on their own.
+                The problem set involved creating synthetic samples, calculating the running sum of positive observations, and using those observations to calculate the chi-squared statistic.
+                The students were then tasked with predicting the likelihood of the next observation being positive.
+                Finally, I provided them with prior knowledge about the distribution of samples to train the classifier.
+                This approach helped to enhance the students' understanding of Machine Learning concepts and techniques.
+              </p>
+              <p>
+                Above is the probability estimate that Box 2 (b2) is of type X (chiX) as the number of observations increase. It is a multinomial classifier with 3 classifications.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/navigation.js"></script>
+</body>
+</html>

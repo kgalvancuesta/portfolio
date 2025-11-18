@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS Keyboard - Kevin Galvan Cuesta</title>
+  <meta name="description" content="Custom keyboard layout designed for math and computer science">
+
+  <!-- Favicon -->
+  <link href="Site/img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .keyboard-layout {
+      background: var(--bg-white);
+      padding: var(--spacing-2xl);
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 20px var(--shadow);
+      margin: var(--spacing-2xl) 0;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .key-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+      justify-content: center;
+    }
+
+    .key {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      border: 2px solid var(--border-color);
+      border-radius: 6px;
+      padding: 12px;
+      min-width: 50px;
+      text-align: center;
+      font-weight: 600;
+      box-shadow: 0 2px 4px var(--shadow);
+      transition: var(--transition);
+      cursor: default;
+      position: relative;
+    }
+
+    .key:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px var(--shadow-lg);
+      border-color: var(--primary);
+    }
+
+    .key-special {
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+      color: var(--text-dark);
+      font-weight: 700;
+    }
+
+    .key-modifier {
+      background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+      font-size: 0.875rem;
+    }
+
+    .key-wide {
+      min-width: 80px;
+    }
+
+    .key-wider {
+      min-width: 120px;
+    }
+
+    .key-widest {
+      min-width: 300px;
+    }
+
+    .key-label-top {
+      font-size: 0.75rem;
+      color: var(--text-light);
+      display: block;
+    }
+
+    .key-label-main {
+      font-size: 1.125rem;
+      display: block;
+    }
+  </style>
+</head>
+<body data-page="keyboard">
+
+  <div class="layout">
+    <main class="main-content">
+      <div class="content-wrapper">
+
+        <!-- Hero Section -->
+        <section class="hero">
+          <h1>CS Keyboard</h1>
+          <p>* Not even close to being complete * A custom MacOS keyboard layout for math and computer science.</p>
+        </section>
+
+        <!-- Introduction -->
+        <section class="card">
+          <h2>About This Layout</h2>
+          <p>
+            I'm currently customizing the <a href="https://www.cs.cornell.edu/andru/release/lattice-kbd/" target="_blank">Lattice Keyboard Layout</a>
+            by Andru Luvisi at Cornell University. The focus is on programming, mathematical and statistical notation.
+          </p>
+
+          <div class="btn-group mt-3">
+            <a href="#download" class="btn">
+              <i class="fas fa-download"></i>
+              Download Layout File
+            </a>
+            <a href="https://www.cs.cornell.edu/andru/release/lattice-kbd/" target="_blank" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i>
+              View Original Lattice Layout
+            </a>
+          </div>
+        </section>
+
+        <!-- Keyboard Preview -->
+        <section class="keyboard-layout">
+          <h3 class="text-center mb-4">Layout Preview</h3>
+
+          <div class="key-row">
+            <div class="key"><span class="key-label-top">`</span><span class="key-label-main">~</span></div>
+            <div class="key"><span class="key-label-top">1</span><span class="key-label-main">!</span></div>
+            <div class="key"><span class="key-label-top">2</span><span class="key-label-main">@</span></div>
+            <div class="key"><span class="key-label-top">3</span><span class="key-label-main">#</span></div>
+            <div class="key"><span class="key-label-top">4</span><span class="key-label-main">$</span></div>
+            <div class="key"><span class="key-label-top">5</span><span class="key-label-main">%</span></div>
+            <div class="key"><span class="key-label-top">6</span><span class="key-label-main">^</span></div>
+            <div class="key"><span class="key-label-top">7</span><span class="key-label-main">&</span></div>
+            <div class="key"><span class="key-label-top">8</span><span class="key-label-main">*</span></div>
+            <div class="key"><span class="key-label-top">9</span><span class="key-label-main">(</span></div>
+            <div class="key"><span class="key-label-top">0</span><span class="key-label-main">)</span></div>
+            <div class="key"><span class="key-label-top">-</span><span class="key-label-main">_</span></div>
+            <div class="key"><span class="key-label-top">=</span><span class="key-label-main">+</span></div>
+            <div class="key key-modifier key-wide">Backspace</div>
+          </div>
+
+          <div class="key-row">
+            <div class="key key-modifier key-wide">Tab</div>
+            <div class="key key-special"><span class="key-label-main">Q</span></div>
+            <div class="key key-special"><span class="key-label-main">W</span></div>
+            <div class="key key-special"><span class="key-label-main">E</span></div>
+            <div class="key key-special"><span class="key-label-main">R</span></div>
+            <div class="key key-special"><span class="key-label-main">T</span></div>
+            <div class="key key-special"><span class="key-label-main">Y</span></div>
+            <div class="key key-special"><span class="key-label-main">U</span></div>
+            <div class="key key-special"><span class="key-label-main">I</span></div>
+            <div class="key key-special"><span class="key-label-main">O</span></div>
+            <div class="key key-special"><span class="key-label-main">P</span></div>
+            <div class="key"><span class="key-label-top">[</span><span class="key-label-main">{</span></div>
+            <div class="key"><span class="key-label-top">]</span><span class="key-label-main">}</span></div>
+            <div class="key"><span class="key-label-top">\</span><span class="key-label-main">|</span></div>
+          </div>
+
+          <div class="key-row">
+            <div class="key key-modifier key-wider">Caps Lock</div>
+            <div class="key key-special"><span class="key-label-main">A</span></div>
+            <div class="key key-special"><span class="key-label-main">S</span></div>
+            <div class="key key-special"><span class="key-label-main">D</span></div>
+            <div class="key key-special"><span class="key-label-main">F</span></div>
+            <div class="key key-special"><span class="key-label-main">G</span></div>
+            <div class="key key-special"><span class="key-label-main">H</span></div>
+            <div class="key key-special"><span class="key-label-main">J</span></div>
+            <div class="key key-special"><span class="key-label-main">K</span></div>
+            <div class="key key-special"><span class="key-label-main">L</span></div>
+            <div class="key"><span class="key-label-top">;</span><span class="key-label-main">:</span></div>
+            <div class="key"><span class="key-label-top">'</span><span class="key-label-main">"</span></div>
+            <div class="key key-modifier key-wider">Enter</div>
+          </div>
+
+          <div class="key-row">
+            <div class="key key-modifier key-wider">Shift</div>
+            <div class="key key-special"><span class="key-label-main">Z</span></div>
+            <div class="key key-special"><span class="key-label-main">X</span></div>
+            <div class="key key-special"><span class="key-label-main">C</span></div>
+            <div class="key key-special"><span class="key-label-main">V</span></div>
+            <div class="key key-special"><span class="key-label-main">B</span></div>
+            <div class="key key-special"><span class="key-label-main">N</span></div>
+            <div class="key key-special"><span class="key-label-main">M</span></div>
+            <div class="key"><span class="key-label-top">,</span><span class="key-label-main"><</span></div>
+            <div class="key"><span class="key-label-top">.</span><span class="key-label-main">></span></div>
+            <div class="key"><span class="key-label-top">/</span><span class="key-label-main">?</span></div>
+            <div class="key key-modifier key-wider">Shift</div>
+          </div>
+
+          <div class="key-row">
+            <div class="key key-modifier">Ctrl</div>
+            <div class="key key-modifier">Fn</div>
+            <div class="key key-modifier">Alt</div>
+            <div class="key key-modifier">Cmd</div>
+            <div class="key key-widest">Space</div>
+            <div class="key key-modifier">Cmd</div>
+            <div class="key key-modifier">Alt</div>
+            <div class="key key-modifier">Ctrl</div>
+          </div>
+        </section>
+
+        <!-- Download Section -->
+        <section class="card" id="download">
+          <h2>Download</h2>
+          <p>
+            Click below to download! Only available for MacOS.
+          </p>
+
+          <div class="btn-group">
+            <a href="#" class="btn" onclick="alert('There\'s nothing here yet. I do recommend the original version though.'); return false;">
+              <i class="fas fa-download"></i>
+              Download Keyboard Layout
+            </a>
+          </div>
+
+          <div class="mt-4" style="background: var(--primary-light); padding: var(--spacing-md); border-radius: var(--border-radius-sm);">
+            <p class="mb-0" style="color: var(--text-dark);">
+              <i class="fas fa-info-circle" style="color: var(--primary);"></i>
+              <strong>Note:</strong> My current layout is based on the <a href="https://www.cs.cornell.edu/andru/release/lattice-kbd/" target="_blank">Lattice Keyboard Layout</a>
+              by Andru Luvisi. Please visit the original site for details on its features and use.
+            </p>
+          </div>
+        </section>
+
+        <!-- Installation Instructions -->
+        <section class="card">
+          <h2>Installation Instructions</h2>
+
+          <h4>MacOS</h4>
+          <ol>
+            <li>Download the keyboard layout file below</li>
+            <li>Copy the file to <code>~/Library/Keyboard Layouts/</code></li>
+            <li>Log out and log back in</li>
+            <li>Go to System Preferences → Keyboard → Keyboard Layouts</li>
+            <li>Click the + button and find your custom layout</li>
+            <li>Select it and enable "Show Input menu in menu bar"</li>
+          </ol>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/navigation.js"></script>
+</body>
+</html>
